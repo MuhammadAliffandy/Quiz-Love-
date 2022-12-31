@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    margin: 0;
+    background-image: -webkit-linear-gradient(top, #CB2BC5 0%, #660662 100%);
+    background-repeat: no-repeat;
+    
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    width: 400px;
+    height: 450px;
+    background: linear-gradient(180deg, rgba(255, 220, 220, 0.28) 0%, rgba(255, 233, 233, 0.14) 100%);
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.card i{
+    color: white;
+    margin: 15px;
+}
+
+.gambar img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+}
+
+.inputan{
+    width: min-content;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    left: 7.5%;
+}
+
+.inputan p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inputan input{
+    color: white;
+    width: 310px;
+    height: 40px ;
+    border: 2px solid#FFCA40;
+    border-collapse: collapse;
+    border-radius:9px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    cursor:text;
+}
+
+
+.inputan input:focus{
+    border-color:#ffd83e ;
+    outline: none;
+    border-collapse: collapse;
+}
+
+::placeholder{
+    color: rgba(229, 221, 221, 0.578);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inputan button{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 10px;
+    padding: 13px 145px;
+    font-size: 16px;
+    border:none;
+    background: linear-gradient(180deg, #FFCA40 0%, #C66F09 158.24%);
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.inputan button:hover{
+    background: linear-gradient(180deg, #bf8901 0%, #915108 158.24%);
+}
+
+
+/* ini adalah style kuis */
+
+.cardkuis{
+    width: max-content;
+    z-index:0;
+    opacity: 0;
+}
+
+.cardkuis h1{
+    font-size: 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card1{
+    width: 1100px;
+    height: 450px;
+    background: linear-gradient(180deg, rgba(255, 220, 220, 0.28) 0%, rgba(255, 233, 233, 0.14) 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soal{
+
+    width: 95%;
+    height: 90%;
+}
+
+.soal p{
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.soal form .answer{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 35px 0px;
+    border: 2px solid none;
+    cursor: pointer;
+}
+
+.soal form .answer:hover{
+    color: #f632f2;
+    text-shadow: 0px 7px 10px rgba(32, 30, 30, 0.489)
+}
+
+input[type="radio"]{
+    appearance: none;
+    width: 15px;
+    height: 15px ;
+    border-radius: 50%;
+    background-color: none;
+    border: 1px solid #fff;
+    outline: 1px solid #999;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    appearance: none;
+    width: 15px;
+    height: 15px ;
+    border-radius: 50%;
+    background-color: #ffa84b;
+    border: 3px solid #fff;
+    outline: 1px solid #999;
+}
+
+.tombol{
+    
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.tombol #next{
+    cursor: pointer;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    background: linear-gradient(180deg, #FFCA40 0%, #A55900 158.24%);
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.tombol #next:hover{
+    background: linear-gradient(180deg, #bf8901 0%, #915108 158.24%);
+}
+
+
+/* ini adalah style kuis done */
+
+.card2{
+    width: 400px;
+    height: 440px;
+    background: linear-gradient(180deg, rgba(255, 220, 220, 0.28) 0%, rgba(255, 233, 233, 0.14) 100%);
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+.gambar1{
+    display: flex;
+    justify-content: center;
+}
+
+.gambar1 img{
+    width: 330px;
+    height: 200px;
+    
+}
+
+.textdone{
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.kembali{
+    display: flex;
+    justify-content: center;
+}
+
+#nilai{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.respawn{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 10px;
+    padding: 13px 145px;
+    font-size: 16px;
+    border:none;
+    background: linear-gradient(180deg, #FFCA40 0%, #C66F09 158.24%);
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.respawn:hover{
+    background: linear-gradient(180deg, #bf8901 0%, #915108 158.24%);
+}
+
+@media screen and (max-width: 1300px) {
+
+    .cardkuis h1{
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .cardkuis h1{
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .card1{
+        margin:auto;
+        width: 850px;
+        height: 450px;
+        background: linear-gradient(180deg, rgba(255, 220, 220, 0.28) 0%, rgba(255, 233, 233, 0.14) 100%);
+    }
+
+    .soal p{
+        font-size: 25px;
+    }
+    
+    .soal form .answer{
+        font-size: 18px;
+    }
+
+    .soal{
+        width: 85%;
+        height: 85%;
+    }
+
+    input[type="radio"]{
+        width: 15px;
+        height: 15px ;
+    }
+    
+    input[type="radio"]:checked{
+        width: 15px;
+        height: 15px ;
+    }
+
+    .tombol{
+        margin-top: 10px;
+       
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .cardkuis h1{
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .cardkuis h1{
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .card1{
+        margin:auto;
+        width: 650px;
+        height: 450px;
+        background: linear-gradient(180deg, rgba(255, 220, 220, 0.28) 0%, rgba(255, 233, 233, 0.14) 100%);
+    }
+
+    .soal p{
+        font-size: 25px;
+    }
+    
+    .soal form .answer{
+        font-size: 18px;
+    }
+
+    .soal{
+        width: 85%;
+        height: 85%;
+    }
+
+    input[type="radio"]{
+        width: 15px;
+        height: 15px ;
+    }
+    
+    input[type="radio"]:checked{
+        width: 15px;
+        height: 15px ;
+    }
+
+    .tombol{
+        margin-top: 10px;
+       
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .card{
+        width: 350px;
+        height: 440px;
+    }
+
+    .gambar img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        
+    }
+    
+    .inputan{
+        width: min-content;
+        text-align: center;
+        position: relative;
+        left: 5%;
+
+    }
+    
+    .inputan p{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .inputan input{
+        width: 290px;
+        height: 40px ;
+
+    }
+    
+    .inputan button{
+        border-radius: 10px;
+        padding: 13px 135px;
+    }
+
+    .cardkuis h1{
+        font-size: 22px;
+        width: 90%;
+    }
+
+            
+    .cardkuis h1{
+        font-size:12px;
+        margin-left: 55px;
+        width: 75%;
+      
+    }
+    .card1{
+        margin:auto;
+        width: 350px;
+        height: 400px;
+        background: linear-gradient(180deg, rgba(255, 220, 220, 0.28) 0%, rgba(255, 233, 233, 0.14) 100%);
+    }
+
+    .soal p{
+        font-size: 15px;
+    }
+    
+    .soal form .answer{
+        font-size: 10px;
+    }
+
+    .soal{
+        width: 85%;
+        height: 85%;
+    }
+
+    input[type="radio"]{
+        width: 8px;
+        height: 8px ;
+    }
+    
+    input[type="radio"]:checked{
+        width: 8px;
+        height: 8px ;
+    }
+
+    .tombol{
+        margin-top: 10px;
+        width: 100%;
+        
+    }
+
+    .tombol #next{
+        cursor: pointer;
+        font-size:10px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        background: linear-gradient(180deg, #FFCA40 0%, #A55900 158.24%);
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    .card2{
+        width: 350px;
+        height: 400px;
+    }
+
+    .respawn{
+
+        padding: 10px 110px;
+        font-size: 14px;
+    }
+
+    .gambar1 img{
+        width: 300px;
+        height: 180px;
+        
+    }
+    
+    .textdone{
+        font-size:20px;
+    }
+    
+    
+    #nilai{
+        font-size: 30px;
+
+    }
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+</head>
+
+<body id="body" onload="startTime()">
+    <div class="container">
+        <div class="icon">
+            <div class="tooltip">
+                <span class="tooltiptext" id="tiptext" style="color:rgba(255, 105, 105, 0.829)" ;></span>
+                <i style="color:rgba(255, 105, 105, 0.829);" class="fa-solid fa-hourglass-end"></i>
+            </div>
+            <div class="tooltip">
+                <span class="tooltiptext" id="tiptext1" style="color:rgb(245, 133, 35);"></span>
+                <i style="color:rgb(245, 133, 35);" class="fa-regular fa-clock"></i>
+            </div>
+            <div class="tooltip">
+                <span class="tooltiptext" style="color:rgb(37, 166, 235);" id="tiptext2"></span>
+                <i style="color:rgb(37, 166, 235);" class="fa-regular fa-calendar"></i>
+            </div>
+        </div>
+        <div class="textline">
+            <h1>Selamat Datang di Love Quiz</h1>
+            <p>Kuis ini akan menentukan seberapa besar sayang dan cinta kamu
+                terhadap pasanganmu selama ini. Atau ternyata kamu tidak sayang sekali? Eumm sebaiknya dimulai saja ya
+                wkwkwk, Silahkan
+            </p>
+            <button><a href="kuis.html">Masuk Sekarang</a></button>
+        </div>
+        <div class="icon">
+            <div class="tooltip1">
+                <span style="color:rgb(253, 78, 221);" class="tooltiptext" id="tiptext3"></span>
+                <i style="color:rgb(253, 78, 221);" class="fa-solid fa-temperature-low"></i>
+            </div>
+            <div class="tooltip1">
+                <span style="color:rgb(255, 206, 58);" class="tooltiptext" id="tiptext4"></span>
+                <i id="light" style="color:rgb(255, 206, 58);" onclick="gantibg()" class="fa-solid fa-sun"></i>
+            </div>
+            <div class="tooltip1">
+                <span style="color:rgb(59, 255, 115);" class="tooltiptext" id="tiptext5"></span>
+                <i style="color:rgb(59, 255, 115);" class="fa-solid fa-user-secret"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Yuk</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card">
+            <a href="index.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+            <form class="inputan">
+                <div class="gambar">
+                    <img src="love.png">
+                </div>
+                <p>Masukkan Nama terlebih dahulu!</p>
+                <input id='nama' type="text" placeholder="Isi Nama dulu Yaw . . .">
+                <button type="button" onclick="mulaikuis()" >Mulai</button>
+            </form>
+        </div>
+<!-- =================================batas div -->
+        <div id="cardkuis" class="cardkuis">
+            <h1></h1>
+            <div class="card1">
+                <div class="soal" >
+                    <p id="pertanyaan">
+                    </p>
+                    <form class="listjawaban">
+                            <div class="answer" id="answer1">
+                                <input  name="jawaban" id="jawaban1" class="jawaban" type="radio">
+                                <label id="jawabann1" for="jawaban1" ></label>
+                            </div>
+                            <div class="answer" id="answer2">
+                                <input  name="jawaban" id="jawaban2" class="jawaban" type="radio">
+                                <label id="jawabann2" for="jawaban2" >halo</label>
+                            </div>
+                            <div class="answer" id="answer3">
+                                <input  name="jawaban" id="jawaban3" class="jawaban" type="radio">
+                                <label id="jawabann3" for="jawaban3" >halo</label>
+                            </div>
+                            <div class="answer" id="answer4">
+                                <input  name="jawaban" id="jawaban4" class="jawaban" type="radio">
+                                <label id="jawabann4" for="jawaban4" >halo</label>
+                            </div>
+                        </form>
+                        <div class="tombol">
+                            <button name="next" id="next" class="btn" onclick="lanjut()" type="button">next</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+<!-- =================================batas div -->
+        <div class="card2" id="card2">
+            <div class="gambar1">
+                <img src="hore-01.png">
+            </div>
+            <p id="textdone" class="textdone">Nilai cinta anda adalah</p>
+            <p id="nilai"><b></b></p>
+            <form class="kembali">
+                <button type="button" onclick="ulang()" class="respawn" id="respawn" >Respawn</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js" ></script>
+</html>
