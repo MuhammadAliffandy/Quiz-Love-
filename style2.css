@@ -138,7 +138,7 @@ body{
 }
 
 .soal form .answer:hover{
-    color: #f632f2;
+    color: #purple;
     text-shadow: 0px 7px 10px rgba(32, 30, 30, 0.489)
 }
 
